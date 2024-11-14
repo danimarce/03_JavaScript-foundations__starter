@@ -9,3 +9,18 @@
       Log 'name' value.
 
 */
+
+const updateValue = (value) => {
+  name = value;
+};
+
+let name = "Dani";
+
+updateValue("test");
+window.console.log({ name: name });
+
+updateValue(true);
+window.console.log({ name: name });
+
+updateValue(28);
+window.console.log({ name: name });
