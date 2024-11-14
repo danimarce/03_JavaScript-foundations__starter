@@ -6,6 +6,13 @@ Answer following questions in this file.
 
 ```
 JavaScript is the programing language more used on the web
+
+Some characteristics:
+
+- Interpreted language: Runs without needing pre-compilation
+- Multi-paradigm: Supports multiples paradigm like object-oriented, functional programming, etc...
+- Single-threaded: Executes in a single-threaded environment (one operation at a time)
+- Dynamically typed: Variables can change type
 ```
 
 ## About values
@@ -13,29 +20,33 @@ JavaScript is the programing language more used on the web
 ### What is a primitive value?
 
 ```
-It's a data type that is not an object and does not have methods
+It's a data type that is not an object and does not have methods they are immutables
 ```
 
 ### Which are primitive values? Explain them with at least one example for primitive.
 
 ```
 - string: is a secuency of characters used to represent text
-Ex: "dani"
+Ex: let name = "dani"
 
 - number: is a numeric data type
-Ex: 13
+Ex: let number = 13
 
 - bigInt: is a numeric data type used when values are larger than range suported by number data type
-Ex: BigInt("1234567890123456789012345678901234567890")
+Ex: let bigNumber = BigInt("1234567890123456789012345678901234567890")
 
 - boolean: is a data type there only can have 2 values (true or false)
-Ex: true
+Ex: let approbed = true
+
+- null: represents the absence of any object value
+Ex: let none = null
 
 - undefined: is a data type assigned to variables there are have only been declared 
 Ex: let test 
 (test value = undefined)
 
-- symbol
+- symbol: represents a unique and immutable identifier
+Ex: let uniqueId = Symbol("description");
 ```
 
 ## About variables
@@ -43,7 +54,7 @@ Ex: let test
 ### What is a variable in JS?
 
 ```
-It's a space in a memory that is created to store values
+It's a memory reference that is created to store values
 ```
 
 ### How many ways can we define a variable in JS? Is there any not recommended way?
@@ -57,8 +68,14 @@ let
 ### Which are the most used var naming conventions in JS?
 
 ```
-camelCase
-ex: textParagraph
+camelCase:
+ex: let textParagraph = 'hi'
+
+PascalCase:
+ex: TextParagraph = 'hi'
+
+snake_case:
+ex: text_paragraph = 'hi'
 ```
 
 ## About operators
@@ -109,4 +126,6 @@ Returns true
 or ||: returns true if one or more conditions are true or if all are true, if all are false returns false
 Ex: 5 == 3 + 3 || false
 Returns false
+
+not !: returns opsite of a contition truth value, if the condition is true will return false
 ```
