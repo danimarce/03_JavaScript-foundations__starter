@@ -15,8 +15,8 @@ true && console.log("moo");
 // console.log doesn't works because the first fasly operator value is false, then returns false
 false && console.log("moo moo?");
 
-// console.log doesn't works because 
+// console.log doesn't works because the first operator is true, then the second operactor is not evaluated
 true || console.log("hello friend");
 
-// console.log works because
+// console.log works because the first operator is false, then the second operator is evaluated
 false || console.log("bye friend");
